@@ -21,7 +21,7 @@ export default function Create() {
         const newPerson = {...form};
         await fetch("http://localhost:5000/record/add", {
             method: "POST",
-            header: {
+            headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(newPerson),
@@ -65,7 +65,7 @@ export default function Create() {
                 </div>
                 <div className="form-group">
                     <div className="form-check form-check-inline">
-                        <inpt
+                        <input
                             className="form-check-input"
                             type="radio"
                             name="positionOptions"
@@ -77,7 +77,7 @@ export default function Create() {
                         <label htmlFor="positionIntern" className="form-check-label">Intern</label>
                     </div>
                     <div className="form-check form-check-inline">
-                        <inpt
+                        <input
                             className="form-check-input"
                             type="radio"
                             name="positionOptions"
@@ -89,7 +89,7 @@ export default function Create() {
                         <label htmlFor="positionJunior" className="form-check-label">Junior</label>
                     </div>
                     <div className="form-check form-check-inline">
-                        <inpt
+                        <input
                             className="form-check-input"
                             type="radio"
                             name="positionOptions"

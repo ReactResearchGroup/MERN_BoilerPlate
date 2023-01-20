@@ -24,7 +24,7 @@ export default function Edit() {
 
             const record = await response.json();
             if (!record) {
-                winddow.alert(`Record with id ${id} not found`);
+                window.alert(`Record with id ${id} not found`);
                 navigate("/");
                 return;
             }
@@ -33,7 +33,6 @@ export default function Edit() {
         }
 
         fetchData();
-
         return;
     }, [params.id, navigate]);
 
@@ -89,7 +88,7 @@ export default function Edit() {
                 </div>
                 <div className="form-group">
                     <div className="form-check form-check-inline">
-                        <inpt
+                        <input
                             className="form-check-input"
                             type="radio"
                             name="positionOptions"
@@ -101,7 +100,7 @@ export default function Edit() {
                         <label htmlFor="positionIntern" className="form-check-label">Intern</label>
                     </div>
                     <div className="form-check form-check-inline">
-                        <inpt
+                        <input
                             className="form-check-input"
                             type="radio"
                             name="positionOptions"
@@ -113,7 +112,7 @@ export default function Edit() {
                         <label htmlFor="positionJunior" className="form-check-label">Junior</label>
                     </div>
                     <div className="form-check form-check-inline">
-                        <inpt
+                        <input
                             className="form-check-input"
                             type="radio"
                             name="positionOptions"
